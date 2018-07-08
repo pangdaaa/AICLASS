@@ -372,7 +372,7 @@ Page({
                   mode: 'walking',
                   from: fromll,
                   to: toll,
-                  key: 'UVSBZ-7MJWU-SQ5VV-2RMCC-BDJNK-G2FVK',
+                  key: 'UVSBZ-*******************-G2FVK',
                 },
                 login: true,
                 success(result) {
