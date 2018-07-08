@@ -1,0 +1,55 @@
+<!--pages/stat/stat.wxml-->
+<view class="container">
+
+  <view class="stuInfo">
+    <text class='info'>{{currName}}　地点：{{classRoom}}</text>
+    <!-- <text>班级数 {{classNum}}　到课人数 {{peopleNum_Curr}}/{{peopleNumAll_Curr}}　课程到课率 {{signRate_Curr}}%</text> -->
+    <text>班级数 {{classNum}}</text>
+  </view>
+
+  <scroll-view class='signD' scroll-y style="height: 600rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="classmsg" class="scroll-view-item classmsg" wx:for="{{items}}"  >
+      <view class='classnum'>
+        <text>上课班级：{{item.className}}</text>
+        <view style='display:flex;'>
+          <!-- <view class='stu'>
+            <view style='display:flex;padding-top:20rpx;'>
+              <view>
+                <image style="width: 35px; height: 35px;" mode="scaleToFill" src='../../images/a.png'> </image>
+              </view>
+              <view>
+                <text style='font-size:20px;'>{{item.peopleNum_Class}}</text>
+              </view>
+
+
+            </view>
+            <text>已到人数</text>
+          </view> -->
+<!-- 
+          <view style='width: 45%'>
+            <view class='attendance'>
+              <text>到课率：{{item.signRate_Class}}%</text>
+            </view>
+            <view class='seat'>
+              <text>前座率：{{item.frontRate_Class}}%</text>
+            </view>
+          </view> -->
+
+          <view class='history' data-className="{{item.className}}" bindtap="tapclick_h">
+            <text>统计详情</text>
+          </view>
+
+        </view>
+      </view>
+    </view>
+
+
+  </scroll-view>
+
+  <view class='currD' bindtap="tapclick_signDetail">
+    本课程历史统计
+  </view>
+  <view class='attention'>下拉刷新签到统计列表</view>
+
+
+</view>

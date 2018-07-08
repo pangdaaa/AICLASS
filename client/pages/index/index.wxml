@@ -1,0 +1,72 @@
+<!--pages/signDetail/signDetail.wxml-->
+<!--index.wxml-->
+<view class="container">
+
+  <map id="Map" latitude="{{latitude}}" longitude="{{longitude}}" circles="{{circles}}" scale="{{scale}}" bindregionchange="bindregionchange" polyline="{{polyline}}" markers="{{markers}}" controls="{{controls}}" bindmarkertap="bindmarkertap" bindcontroltap="bindcontroltap"
+    show-location/>
+
+
+  <view class="courseInfo">
+    <text class='info'>{{className}}班　{{currName}}</text>
+    <!-- <text class='info'>{{className}}班　到课率 {{signRate_Curr}}%</text> -->
+    <text>　地点：{{classRoom}}　签到时限：{{signTime_E}}分钟　</text>
+     <!-- <text>{{currName}}　{{classRoom}}　{{signTime_B}} 签到时限：{{signTime_E}}分钟　{{teacherName}}</text> -->
+  </view>
+
+
+  <view class="sign" bindtap="tapclick">
+    <image src='../../images/aq_sign.png'></image>
+  </view>
+
+
+  <view class="stunum">
+    <text>学号：{{stuNum}}</text>
+  </view>
+
+  <view class="stuInfo">
+
+    <view class='stunum_item'>
+
+      <view class='item'>
+        <view>
+          <image style="width: 25px; height: 25px;" mode="scaleToFill" src='../../images/a.png'> </image>
+        </view>
+        <view>
+          <text>　{{signRate_S}}%</text> </view>
+      </view>
+
+      <view class='item'>
+        <text>我的到课率</text> </view>
+    </view>
+
+    <view class='stunum_item'>
+      <view class='item'>
+        <view>
+          <image style="width: 25px; height: 25px;" mode="scaleToFill" src='../../images/b.png'> </image>
+        </view>
+        <view>
+          <text>　{{frontRate_S}}%</text> </view>
+      </view>
+
+      <view class='item'>
+        <text>我的前座率</text> </view>
+    </view>
+
+    <view class='stunum_item'>
+      <view class='item'>
+        <view>
+          <image style="width: 15px; height: 15px;" mode="scaleToFill" src='../../images/c.png'> </image>
+        </view>
+        <view>
+          <text>　{{credit}}</text> </view>
+      </view>
+
+      <view class='item'>
+        <text>我的信用分</text> </view>
+    </view>
+
+
+
+  </view>
+
+</view>

@@ -1,0 +1,71 @@
+<!--pages/information/information.wxml-->
+<view class='container'>
+
+  <view class="body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+
+      <view class="section">
+        <view class="title">班级（必填）</view>
+        <view class="after-title">
+          <view class="weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="className" placeholder="学生填写班级，老师填写学校" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="title">姓名（必填）</view>
+        <view class="after-title">
+          <view class="weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="name" placeholder="请填写真实姓名" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="title">学号/职工号（必填）</view>
+        <view class="after-title">
+          <view class="weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="stuNum" placeholder="请填写您的学号/职工号" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="title">您的电话（必填）</view>
+        <view class="after-title">
+          <view class="weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="phone" placeholder="请填写您的手机号码" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="title">教师认证码（输入认证码方可发起签到）</view>
+        <view class="after-title">
+          <view class="weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="isTeacher" placeholder="请填写教师认证码" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="btn-area">
+        <button type="primary" formType="submit">提交</button>
+        <button formType="reset">重置</button>
+      </view>
+
+    </form>
+
+  </view>
+
+</view>

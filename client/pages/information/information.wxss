@@ -1,0 +1,36 @@
+/* pages/information/information.wxss */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #efeff3;
+}
+
+.body {
+  width: 100%;
+}
+
+.title {
+  height: 40rpx;
+  margin-top: 15rpx;
+  margin-left: 20rpx;
+  position: relative;
+  font-size: 32rpx;
+}
+
+.after-title {
+  margin-top: 30rpx;
+  background-color: white;
+  height: 77rpx;
+  border: 1px solid #d9d9d9;
+}
+
+.btn-area button {
+  margin: 60rpx 20rpx 1rpx;
+}
+
+.weui-input {
+  margin-left: 20rpx;
+  position: relative;
+}

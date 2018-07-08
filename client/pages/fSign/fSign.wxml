@@ -1,0 +1,65 @@
+<!--pages/fSign/fSign.wxml-->
+<view class="container">
+
+  <view class='finSign'>
+    <text style='font-size:33px;color:black'>签到{{signResult}}</text>
+    <text style='padding-top:35rpx;font-size:16px'>签到地点：东经:{{latitude_S}}　北纬:{{longitude_S}}</text>
+    <text style='padding-top:20rpx;font-size:16px'>签到时间：{{signTime}}</text>
+  </view>
+
+  <view class='times'>
+  <image style="width: 25px; height: 25px;" mode="scaleToFill" src='../../images/d.png'> </image>
+    <text>　本课累计到课次数  {{signTimes}}次（共{{signTimesAll}}次）</text>
+  </view>
+
+  <view class="stuInfo">
+
+    <view class='stunum_item'>
+
+      <view class='item'>
+        <view>
+          <image style="width: 25px; height: 25px;" mode="scaleToFill" src='../../images/a.png'> </image>
+        </view>
+        <view>
+          <text>　{{signRate_S}}%</text> </view>
+      </view>
+
+      <view class='item'>
+        <text>我的到课率</text> </view>
+    </view>
+
+    <view class='stunum_item'>
+      <view class='item'>
+        <view>
+          <image style="width: 25px; height: 25px;" mode="scaleToFill" src='../../images/b.png'> </image>
+        </view>
+        <view>
+          <text>　{{frontRate_S}}%</text> </view>
+      </view>
+
+      <view class='item'>
+        <text>我的前座率</text> </view>
+    </view>
+
+    <view class='stunum_item'>
+      <view class='item'>
+        <view>
+          <image style="width: 15px; height: 15px;" mode="scaleToFill" src='../../images/c.png'> </image>
+        </view>
+        <view>
+          <text>　{{credit}}</text> </view>
+      </view>
+
+      <view class='item'>
+        <text>我的信用分</text> </view>
+    </view>
+
+
+
+  </view>
+
+  <view class='ad'>
+  <image style="width: 100%; height: 380rpx; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
+  </view>
+
+</view>

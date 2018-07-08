@@ -1,0 +1,33 @@
+<!--pages/currDetail/currDetail.wxml-->
+<view class="container">
+  <view class='currname'>
+
+    <view class='msg'>
+      <text style='font-size:22px;'>{{currName}}</text>
+      <text style='font-size:18px;'>共发起签到{{signTimesAll}}次</text>
+    </view>
+
+    <!-- <view class='rate'>
+      <text>课程到课率：{{signRate_Curr}}%</text>
+      <text>　课程前作率：{{frontRate_Curr}}%</text>
+    </view> -->
+
+  </view>
+
+
+  <view class='chart'>
+
+    <!-- <view style="margin-top:30rpx;font-size:18px;">　统计图</view>
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler" bindtouchmove="moveHandler" bindtouchend="touchEndHandler"></canvas> -->
+    <!-- <view style="text-align:center;font-size:11px;">拖动图表查看</view> -->
+
+    <view class='items'>
+      <view class='item'  wx:for="{{items}}" data-className="{{item.className}}" bindtap="tapclick_h">
+        <!-- <text>{{item.className}}班　到课率：{{item.signRate_Class}}%　前作率：{{item.frontRate_Class}}%</text> -->
+        <text>{{item.className}}班</text>
+      </view>
+    </view>
+
+  </view>
+
+</view>

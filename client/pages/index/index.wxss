@@ -1,0 +1,85 @@
+/* pages/signDetail/signDetail.wxss */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#Map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35%;
+  z-index: 1;
+}
+
+.courseInfo {
+  width: 90%;
+  height: 150rpx;
+  background-color: #efeff3;
+  position: absolute;
+  top: 420rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  color: 535353;
+}
+
+.info {
+  margin: 15rpx;
+}
+
+.sign {
+  width: 200rpx;
+  height: 200rpx;
+  position: relative;
+  top: 620rpx;
+}
+
+.sign image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.stunum {
+  width: 90%;
+  height: 50rpx;
+  background-color: #efeff3;
+  position: absolute;
+  top: 860rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  color: 535353;
+}
+
+.stuInfo {
+  width: 90%;
+  height: 150rpx;
+  position: absolute;
+  top: 930rpx;
+  display: flex;
+}
+
+.stunum_item {
+  width: 30%;
+  height: 130rpx;
+  margin: 5px;
+  justify-content: center;
+  display: flex; 
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.item{
+  margin: 15rpx;
+  display:flex;
+}
+
+

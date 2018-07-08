@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/sign/sign",
+    "pages/fSign/fSign",
+    "pages/bSign/bSign",
+    "pages/stat/stat",
+    "pages/signDetail/signDetail",
+    "pages/me/me",
+    "pages/curriculum/curriculum",
+    "pages/currDetail/currDetail",
+    "pages/information/information",
+    "pages/introduce/introduce",
+    "pages/addCurr/addCurr"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5AB4B4",
+    "navigationBarTitleText": "爱翘",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#6A6767",
+    "selectedColor": "#5AB4B4",
+    "backgroundColor": "#F6F6F6",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "签到",
+        "iconPath": "images/bsign.png",
+        "selectedIconPath": "images/bsign1.png"
+      },
+      {
+        "pagePath": "pages/bSign/bSign",
+        "text": "发起签到",
+        "iconPath": "images/sign.png",
+        "selectedIconPath": "images/sign1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me1.png"
+      }
+    ]
+  }
+}

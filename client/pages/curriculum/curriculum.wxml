@@ -1,0 +1,44 @@
+<!--pages/curriculum/curriculum.wxml-->
+<view class='container'>
+
+  <!-- <view class='search'>
+    <icon class="iconSearch" type="search" size="22"></icon>
+    <input type="text" class="input" placeholder="学生搜索添加课程" value="{{wxSearchData.value}}" bindfocus="wxSerchFocus" bindinput="wxSearchInput" bindblur="wxSearchBlur" />
+     <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+      <icon type="clear" size="14"></icon>
+    </view> 
+  </view> -->
+
+  <view class='curr' wx:for="{{items}}" data-currname="{{item.currname}}" data-signTimesAll="{{item.signTimesAll}}" bindtap="tapclick" >
+    <view class='line'>
+      <view class='yuan'>○</view>
+      <view class='xian'></view>
+    </view>
+
+    <view class='body'>
+      <view class='time'>
+        <text>{{item.date}}</text>
+      </view>
+
+      <view class='details'>
+        <view class='currname'>
+          <text>{{item.currname}}</text>
+
+        </view>
+
+        <view class='sgindata'>
+        <!-- <text>到课率：{{item.signRate}}　前作率：{{item.frontRate}}　共发起签到：{{item.signTimesAll}}次</text> -->
+         <text>共发起签到：{{item.signTimesAll}}次</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='addCurr' bindtap="tapclick_addCurr" wx:if="{{isTeacher}}">
+    <image src='../../images/add.png'></image>
+  </view>
+
+
+
+</view>

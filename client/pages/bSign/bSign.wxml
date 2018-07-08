@@ -1,0 +1,34 @@
+<!--pages/signDetail/signDetail.wxml-->
+<!--index.wxml-->
+<view class="container">
+
+  <view class="courseInfo">
+    <text class='info'>选择课程</text>
+    <radio-group bindchange="radioChange">
+      <label class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+        <view class='radios'>
+          <view class="weui-cell__hd">
+            <radio value="{{item.value}}" checked="true" />
+          </view>
+          <view class="weui-cell__bd">{{item.name}}</view>
+        </view>
+
+      </label>
+    </radio-group>
+  </view>
+
+  <view class="mapWide">
+    <text>位置精度/米（多少米范围内签到有效）</text>
+    <slider bindchange="listenerSlider" min="50" max="200" show-value bindchange="changeCircles" />
+  </view>
+
+  <view class="signTime">
+    <text>签到时限/分钟（多长时间内签到有效）</text>
+    <slider bindchange="listenerSlider" min="1" max="5" show-value bindchange="changeTime" />
+  </view>
+
+  <view class="sign" bindtap="tapclick" formType="submit">
+    <image src='../../images/aq_sign_b.png'></image>
+  </view>
+
+</view>

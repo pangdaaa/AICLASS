@@ -1,0 +1,72 @@
+<!--pages/addCurr/addCurr.wxml-->
+<view class='container'>
+
+  <view class="body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+
+      <view class="section">
+        <view class="title">课程名称(必填)</view>
+        <view class="after-title">
+          <view class="weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="currName" placeholder="请填写课程名" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="title">上课班级</view>
+        <view class="after-title">
+          <view class="weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="class1" placeholder="请填第一个班级" />
+            </view>
+          </view>
+        </view>
+
+        <view class="after-title">
+          <view class="weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="class2" placeholder="请填第二个班级" />
+            </view>
+          </view>
+        </view>
+
+          <view class="after-title">
+          <view class="weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="class3" placeholder="请填第三个班级" />
+            </view>
+          </view>
+        </view>
+
+          <view class="after-title">
+          <view class="weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="class4" placeholder="请填第四个班级" />
+            </view>
+          </view>
+        </view>
+
+          <view class="after-title">
+          <view class="weui-cell_input">
+            <view class="weui-cell__bd">
+              <input class="weui-input" name="class5" placeholder="请填第五个班级" />
+            </view>
+          </view>
+        </view>
+
+      </view>
+
+
+      <view class="btn-area">
+        <button type="primary" formType="submit">提交</button>
+        <button formType="reset">重置</button>
+      </view>
+
+    </form>
+
+  </view>
+
+</view>

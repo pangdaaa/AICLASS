@@ -1,0 +1,78 @@
+/* pages/fSign/fSign.wxss */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.finSign {
+  width: 90%;
+  height: 280rpx;
+  position: absolute;
+  top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  color:silver;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.times {
+  width: 90%;
+  height: 120rpx;
+  position: absolute;
+  top: 330rpx;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.stuInfo {
+  width: 90%;
+  height: 150rpx;
+  position: absolute;
+  top: 460rpx;
+  display: flex;
+  
+}
+
+.stunum_item {
+  width: 30%;
+  height: 130rpx;
+  background-color: white;
+  margin: 5px;
+  justify-content: center;
+}
+
+.ad {
+  width: 90%;
+  height: 380rpx;
+  position: absolute;
+  top: 700rpx;
+}
+
+.stunum {
+  width: 90%;
+  height: 50rpx;
+  background-color: #efeff3;
+  position: absolute;
+  top: 860rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  color: 535353;
+}
+
+.stunum_item {
+  width: 30%;
+  height: 130rpx;
+  margin: 5px;
+  justify-content: center;
+  display: flex; 
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.item{
+  margin: 15rpx;
+  display:flex;
+}

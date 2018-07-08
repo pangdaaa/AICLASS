@@ -1,0 +1,58 @@
+/* pages/signDetail/signDetail.wxss */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #efeff3;
+}
+
+.classname {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 150rpx;
+  background-color: white;
+  position: absolute;
+}
+
+.classn {
+  padding-left: 40rpx;
+  margin-top: 45rpx;
+}
+
+.refresh {
+  padding-right: 50rpx;
+  margin-top: 45rpx;
+}
+
+.stuname {
+  width: 100%;
+  height: 1000rpx;
+  top: 185rpx;
+  background-color: white;
+  position: absolute;
+}
+
+.item_stu {
+  width: 100%;
+  height: 120rpx;
+  margin-top: 30rpx;
+  border-bottom: 1rpx outset #efeff3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-area {
+  margin-top: 500rpx;
+}
+
+.images {
+  padding-left: 35rpx;
+  width: 15%;
+}
+
+.stumag {
+  width: 85%;
+}

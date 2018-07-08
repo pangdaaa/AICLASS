@@ -1,0 +1,72 @@
+/* pages/curriculum/curriculum.wxss */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 200vh;
+}
+
+.curr {
+  width: 100%;
+  height: 180rpx;
+  margin-top: 30rpx;
+  display: flex;
+}
+
+.line {
+  width: 15%;
+  height: 180rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.yuan {
+  color: silver;
+  display: flex;
+  align-items: center;
+}
+
+.xian {
+  width: 2rpx;
+  height: 180rpx;
+  background-color: silver;
+}
+
+.body {
+  width: 85%;
+  height: 180rpx;
+}
+
+.time {
+  width: 90%;
+  height: 50rpx;
+  margin: 0 15rpx;
+  font-size: 24rpx;
+}
+
+.details {
+  width: 90%;
+  height: 130rpx;
+  background-color: #efeff3;
+  border-right: silver;
+  box-shadow: 3rpx 3rpx 3rpx 3rpx silver;
+}
+
+.currname {
+  margin: 0 15rpx;
+  padding-top: 15rpx;
+}
+
+.sgindata {
+  margin: 15rpx 15rpx;
+  font-size: 24rpx;
+}
+
+.addCurr image {
+  position: absolute;
+  left: 620rpx;
+  top: 1050rpx;
+  width: 80rpx;
+  height: 80rpx;
+}

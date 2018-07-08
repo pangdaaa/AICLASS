@@ -1,0 +1,33 @@
+<!--pages/signDetail/signDetail.wxml-->
+<view class="container">
+  <view class='classname'>
+    <view class='classn'>
+      <text>{{className}}班　　共{{peopleNumAll_Class}}人</text>
+    </view>
+
+    <view class='refresh' bindtap="tapclick_refresh">
+      <image style="width: 25px; height: 25px;" mode="scaleToFill" src='../../images/refresh.png'></image>
+    </view>
+
+  </view>
+
+  <scroll-view class='stuname' scroll-y  bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+
+    <view class='item_stu' wx:for="{{items}}">
+      <view class='images'>
+        <image style="width: 45px; height: 45px;" mode="scaleToFill" src='../../images/user-unlogin.png'></image>
+      </view>
+
+      <view class='stumag'>
+        <view class='name' style="color:{{item.color}}">
+          <text>　{{item.stuName}}　{{item.stuNum}}</text>
+        </view>
+        <view class='signdata'>
+          <text style='font-size:13px; color:#888'>　签到次数：{{item.signTimes}}/{{item.signTimesAll}}　到课率：{{item.signRate_S}}%　前作率：{{item.frontRate_S}}%</text>
+        </view>
+      </view>
+    </view>    
+
+  </scroll-view>
+
+</view>

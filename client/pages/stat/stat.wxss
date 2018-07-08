@@ -1,0 +1,97 @@
+/* pages/stat/stat.wxss */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.stuInfo {
+  width: 90%;
+  height: 150rpx;
+  background-color: #efeff3;
+  position: absolute;
+  top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  color: 535353;
+}
+
+.info {
+  margin: 20rpx;
+}
+
+.signD {
+  width: 90%;
+  height: 680rpx;
+  position: absolute;
+  top: 200rpx;
+}
+
+.scroll-view-item {
+  height: 200rpx;
+  width: 100%;
+  padding-top: 20rpx;
+}
+
+.classmsg {
+  margin-bottom: 10rpx;
+  font-size: 16px;
+}
+
+.classnum {
+  width: 100%;
+  height: 60rpx;
+  position: static;
+  background-color: #efeff3;
+  font-size: 18px;
+}
+
+.stu {
+  width: 30%;
+  position: static;
+  display: flex;
+  flex-direction: column;
+}
+
+.attendance {
+  width: 100%;
+  height: 70rpx;
+  position: static;
+  margin-bottom: 5rpx;
+  padding-top: 20rpx;
+}
+
+.seat {
+  width: 100%;
+  height: 70rpx;
+  position: static;
+}
+
+.history {
+  margin-top: 70rpx;
+  width: 30%;
+  position: static;
+  color: blue;
+}
+
+.currD {
+  top: 950rpx;
+  width: 90%;
+  height: 40px;
+  background-color: #5AB4B4;
+  position: absolute;
+  padding-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.attention{
+  position: absolute;
+  top: 1100rpx;
+  font-size: 13px;
+  color: #707070;
+}
